@@ -1,0 +1,46 @@
+# tasks file for at-server
+---
+- name: install package
+  apt:
+    name: "{{ item }}"
+    state: "{{ apt_install_state | default('latest') }}"
+    update_cache: true
+    cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
+  with_items: "{{ at_server_dependencies }}"
+  tags:
+    - configuration
+    - at-server
+    - at-server-install
+
+- name: add group
+  group:
+    name: "{{ item }}"
+  with_flattened:
+    - "{{ at_server_group }}"
+    - "{{ at_server_groups }}"
+  tags:
+    - configuration
+    - at-server
+    - at-server-add-group
+
+- name: add user
+  user:
+    name: "{{ at_server_user }}"
+    group: "{{ at_server_group }}"
+    groups: "{{ at_server_groups | join(',') }}"
+    shell: "{{ at_server_shell }}"
+  tags:
+    - configuration
+    - at-server
+    - at-server-add-user
+
+- name: create authorized_keys from public key
+  authorized_key:
+    user: "{{ at_server_user }}"
+    key: "{{ lookup('file', item.src) }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ at_server_authorized_keys }}"
+  tags:
+    - configuration
+    - at-server
+    - at-server-authorized-keys
