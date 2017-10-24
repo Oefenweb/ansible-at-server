@@ -1,0 +1,4 @@
+# vars file for at-server
+---
+at_server_dependencies:
+  - at

@@ -1,0 +1,7 @@
+# defaults file for at-server
+---
+at_server_user: at
+at_server_group: at
+at_server_groups: []
+at_server_shell: /bin/bash
+at_server_authorized_keys: []
