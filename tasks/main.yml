@@ -15,6 +15,7 @@
 - name: add group
   group:
     name: "{{ item }}"
+    system: true
   with_flattened:
     - "{{ at_server_group }}"
     - "{{ at_server_groups }}"
@@ -26,6 +27,7 @@
 - name: add user
   user:
     name: "{{ at_server_user }}"
+    system: true
     group: "{{ at_server_group }}"
     groups: "{{ at_server_groups | join(',') }}"
     shell: "{{ at_server_shell }}"
