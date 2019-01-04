@@ -1,6 +1,7 @@
 # meta file for at-server
 ---
 galaxy_info:
+  role_name: at-server
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up a persistent channel for queuing commands (using at) in Debian-like systems (server side)
@@ -12,6 +13,7 @@ galaxy_info:
         - precise
         - trusty
         - xenial
+        - bionic
     - name: Debian
       versions:
         - wheezy

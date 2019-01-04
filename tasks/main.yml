@@ -2,11 +2,10 @@
 ---
 - name: install package
   apt:
-    name: "{{ item }}"
+    name: "{{ at_server_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  with_items: "{{ at_server_dependencies }}"
   tags:
     - configuration
     - at-server
