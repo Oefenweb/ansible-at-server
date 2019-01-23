@@ -7,12 +7,14 @@ python: "2.7"
 
 env:
   - ANSIBLE_VERSION=latest
+  - ANSIBLE_VERSION=2.7.6
   - ANSIBLE_VERSION=2.7.5
   - ANSIBLE_VERSION=2.7.4
   - ANSIBLE_VERSION=2.7.3
   - ANSIBLE_VERSION=2.7.2
   - ANSIBLE_VERSION=2.7.1
   - ANSIBLE_VERSION=2.7.0
+  - ANSIBLE_VERSION=2.6.12
   - ANSIBLE_VERSION=2.6.11
   - ANSIBLE_VERSION=2.6.10
   - ANSIBLE_VERSION=2.6.9
@@ -78,3 +80,6 @@ notifications:
     rooms:
       secure: BmAz4IP6o1EUW13EBauXQK/MLXHFNTLy3dCCxeadcMH4DgpAGLllpsqgn0L4LiZGdABJzOgl2sW19q2TYFhdUKZlRARXuYebowwampHLrudYws81sAu80sSqBsR3vFiaShkqAYG1wfAQLF1uzv3kW3BJxk60/wWkclzE8p3/bfjv5jSngIZD7WegzztxhfhHRvvYLnPtZWFsmpLltJueBLr9U+3aB/f7BcJapgfywIUcEPxQIDhNUmSPs1faVlUNxKyEDp3mtbdXibdYDFllneaYyA7IKcaLb5vF36fKAreUcI6DvK5pzM1CYQA1VRtpYfaerZdwrcHPFFF9G5qMPOjx4SAKIjBDiP1K3sApPnj0vpJb7PB6/jCvJVqwJd4AsFyftjeaX7JqF2+1pFEwWyg4SkhwKT2kwVzstuGdXmdFLjnFlTHVeDh/Ou9aOwtz/zfHhO6NyQOIdoVWTlfzWzGnW12TgaC2e6kvg0pkUzqVE/rUEs9TowNtiEa3KZrVnFnybVOr+33Eyvfw4TvbguIY3LEaLrLPeS8hfF6dB+pJpMet2ad7kXA51NdcfbhJPnXnsPF3kSWH2aQYmQdexOiw94wWPaTpMs3AgyrHgY3HLPGYGKtfnw1rB+eQPWMHsQ4deyibUd9tYjNKe51f79kPbIzzcyOWzvJJx3Y1txE=
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  slack:
+    rooms:
+      secure: "euPcmpjNcLlTk1RDjoRdTFQy10TlqyMduULqTgXgcWQ5glnLmjShWPS9R1BQ7a4roL3KyhJmDdye1dfy+uTWFcYF3+zjfNvEGqFrzea5BmldI2/0OM7b5B+FmDi6AVSd3ZqpAs5chJkmoegOx8pSDXaWALogq3ldclVhJdFRrwiQY/ItayStcotKPkrLixK2sBfZh9y5kT+ZEvUKlwF3oX+nHK7CgJXktSxEkqXFmRyDRqFQJkDQsGbtCzs345ZQyGuyahjjrhM3qTwaQ1xyyapCje39hSh8EPpiBvHLe6jA+DLTGfEshleMVJisOZOLvcAM5iAf9b/ltyLsPlzP7FoLPMdBWNCToW6jF6bPdR+ysbrWtF8GSl1b1yp6e/JA8WV3Z7HuQFrxxyuQOvStd5FKPw+SjIuNnaH1uyeRPi4e4PYSDP1io+qid1rjFRhpnDG0/0DwNED9qPPvGsIASyujxeImi5HG1TlYB6glvdWF6TOZCYZqTeeQvNuviaVTpNV3pA8VJMhYFJpb+JSRObZZk00gurwUBY5RrqQzhiYYI6mb9LEBb/ix9+1OwBzO+diV5dfGD+QympH00ltmo0o6oCjwejVamTVcYwdl6YhFMDdPidcVvKyvcwQRjwm0SxvPg06Dd2sj0yiPgJ42V/Xc3dG6S5OE3wAU20agDUo="
