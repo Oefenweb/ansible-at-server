@@ -1,0 +1,4 @@
+# vars file for at-server
+---
+at_server_authorized_keys:
+  - src: "{{ playbook_dir }}/../files/id_rsa.pub"
