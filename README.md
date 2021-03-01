@@ -1,6 +1,6 @@
 ## at-server
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-at-server.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-at-server)
+[![CI](https://github.com/Oefenweb/ansible-at-server/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-at-server/actions?query=workflow%3ACI)
 [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-at--server-blue.svg)](https://galaxy.ansible.com/Oefenweb/at-server/)
 
 Set up a persistent channel for queuing commands (using `at`) in Debian-like systems (server side).
@@ -15,7 +15,7 @@ Set up a persistent channel for queuing commands (using `at`) in Debian-like sys
 
 * `at_server_user`: [default: `at`]: The user that will accept the `at` connection
 * `at_server_group`: [default: `at`]: The primary group of the `at` user
-* `at_server_groups`: [default: `[ssh_users]`]: The secondary groups of the `at` user
+* `at_server_groups`: [default: `['ssh_users']`]: The secondary groups of the `at` user
 * `at_server_shell`: [default: `/bin/bash`]: The shell of the `at` user
 
 * `at_server_authorized_keys`: [default: `[]`]: Authorized key declarations
