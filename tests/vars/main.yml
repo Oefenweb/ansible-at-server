@@ -1,4 +1,8 @@
 # vars file for at-server
 ---
 at_server_authorized_keys:
-  - src: "{{ playbook_dir }}/../files/id_rsa.pub"
+  - src: "{{ at_server_public_key_file }}"
+
+at_server_ssh_directory: "{{ playbook_dir }}/../files"
+at_server_private_key_file: "{{ at_server_ssh_directory }}/id_rsa"
+at_server_public_key_file: "{{ at_server_private_key_file }}.pub"
