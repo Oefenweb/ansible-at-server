@@ -1,4 +1,4 @@
-# vars file for at-server
+# vars file
 ---
 at_server_authorized_keys:
   - src: "{{ at_server_public_key_file }}"

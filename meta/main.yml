@@ -1,6 +1,7 @@
-# meta file for at-server
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: at-server
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.

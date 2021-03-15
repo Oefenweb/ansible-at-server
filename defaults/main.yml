@@ -1,4 +1,4 @@
-# defaults file for at-server
+# defaults file
 ---
 at_server_user: at
 at_server_group: at
