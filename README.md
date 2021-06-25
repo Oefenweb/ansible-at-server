@@ -1,7 +1,7 @@
 ## at-server
 
 [![CI](https://github.com/Oefenweb/ansible-at-server/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-at-server/actions?query=workflow%3ACI)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-at--server-blue.svg)](https://galaxy.ansible.com/Oefenweb/at-server/)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-at--server-blue.svg)](https://galaxy.ansible.com/Oefenweb/at_server/)
 
 Set up a persistent channel for queuing commands (using `at`) in Debian-like systems (server side).
 
