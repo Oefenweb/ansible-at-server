@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: install package
-  apt:
+  ansible.builtin.apt:
     name: "{{ at_server_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
@@ -12,7 +12,7 @@
     - at-server-install
 
 - name: add group
-  group:
+  ansible.builtin.group:
     name: "{{ item }}"
     system: true
   with_flattened:
@@ -24,7 +24,7 @@
     - at-server-add-group
 
 - name: add user
-  user:
+  ansible.builtin.user:
     name: "{{ at_server_user }}"
     system: true
     group: "{{ at_server_group }}"
@@ -36,7 +36,7 @@
     - at-server-add-user
 
 - name: create authorized_keys from public key
-  authorized_key:
+  ansible.posix.authorized_key:
     user: "{{ at_server_user }}"
     key: "{{ lookup('file', item.src) }}"
     state: "{{ item.state | default('present') }}"
