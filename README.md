@@ -37,7 +37,7 @@ None
 ---
 - hosts: all
   roles:
-    - at-server
+    - oefenweb.at-server
   vars:
     at_server_groups:
       - ssh_users
