@@ -15,9 +15,7 @@
   ansible.builtin.group:
     name: "{{ item }}"
     system: true
-  with_flattened:
-    - "{{ at_server_group }}"
-    - "{{ at_server_groups }}"
+  with_items: "{{ [at_server_group] + at_server_groups }}"
   tags:
     - configuration
     - at-server
